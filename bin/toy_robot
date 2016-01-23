@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+# so we can call bin/toy_robot without bundler
+$:.unshift(File.dirname(__FILE__) + '/../lib') unless $:.include?(File.dirname(__FILE__) + '/../lib')
+
+require 'toy_robot/runner'
+
+ToyRobot::Runner.start
