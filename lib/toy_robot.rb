@@ -1,2 +1,6 @@
 require 'toy_robot/version'
+require 'toy_robot/world'
+require 'toy_robot/position'
+require 'toy_robot/errors'
+require 'toy_robot/robot'
 require 'toy_robot/runner'
