@@ -1,5 +1,2 @@
 require 'toy_robot/version'
-
-module ToyRobot
-  
-end
+require 'toy_robot/runner'

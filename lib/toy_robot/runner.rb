@@ -1,6 +1,7 @@
 module ToyRobot
+  # -- Entry point for the toy robot
   class Runner
-    def self.start()
+    def self.start
       puts <<-'EOS'
     ______               ____        __          __
    /_  __/___  __  __   / __ \____  / /_  ____  / /_
