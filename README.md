@@ -8,11 +8,29 @@
           /____/
 ```
 
-## Installation
-
-
 ## Usage
 
+Please read [RULES](RULES) for instructions
+
+install the dependencies
+```
+bundle install
+```
+
+Run the robot in interactive mode
+```
+bin/toy_robot
+```
+
+Run the robot using a file as input
+```
+bin/toy_robot -f spec/examples/a.txt
+```
+
+Print the help
+```
+bin/toy_robot --help
+```
 
 ## Development
 
