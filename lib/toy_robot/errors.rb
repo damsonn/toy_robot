@@ -7,4 +7,7 @@ module ToyRobot
 
   # -- Robot must stay on the table
   class WrongMoveError < Error; end
+
+  # -- Command doesn't exist
+  class NoCommandError < Error; end
 end

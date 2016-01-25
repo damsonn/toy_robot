@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'highline'
 
 describe Runner do
   EXAMPLES = [
@@ -6,6 +7,7 @@ describe Runner do
     { input: 'spec/examples/b.txt', output: /0,0,WEST/ },
     { input: 'spec/examples/c.txt', output: /3,3,NORTH/ }
   ]
+
   describe 'file input mode' do
     EXAMPLES.each do |example|
       it "process #{example[:input]}" do
@@ -13,7 +15,5 @@ describe Runner do
         expect { runner.start }.to output(example[:output]).to_stdout
       end
     end
-  end
-  describe 'interactive mode' do
   end
 end
