@@ -70,7 +70,7 @@ describe Robot do
   describe '#report' do
     it 'reports position' do
       subject.place(0, 0, :north)
-      expect(subject.report).to include('[0, 0]')
+      expect(subject.report).to include('0,0')
     end
 
     it 'reports facing direction' do

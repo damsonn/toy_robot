@@ -3,6 +3,7 @@
 # so we can call bin/toy_robot without bundler|gem
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib') unless $LOAD_PATH.include?(File.dirname(__FILE__) + '/../lib')
 
-require 'toy_robot/runner'
+require 'toy_robot'
 
-ToyRobot::Runner.start
+runner = ToyRobot::Runner.new(ARGV)
+runner.start

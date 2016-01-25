@@ -45,7 +45,7 @@ module ToyRobot
     # -- Report the robot position
     def report
       check_placed
-      "My position is #{position}, facing #{facing}"
+      "#{position},#{facing}"
     end
 
     private

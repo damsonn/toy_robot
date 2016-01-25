@@ -1,8 +1,15 @@
 require 'simplecov'
 require 'coveralls'
 
-SimpleCov.start
 Coveralls.wear!
+
+# local coverage report is at coverage/index.html
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  Coveralls::SimpleCov::Formatter,
+  SimpleCov::Formatter::HTMLFormatter
+]
+
+SimpleCov.start
 
 require 'toy_robot'
 include ToyRobot

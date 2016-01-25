@@ -12,3 +12,9 @@ Style/SignalException:
 
 Metrics/LineLength:
   Max: 150
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/PerlBackrefs:
+  Enabled: false
